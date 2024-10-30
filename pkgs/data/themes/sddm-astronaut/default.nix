@@ -1,13 +1,13 @@
 { pkgs, lib, stdenvNoCC, themeConfig ? null }:
 stdenvNoCC.mkDerivation rec {
   pname = "sddm-astronaut";
-  version = "1.0";
+  version = "1.1";
 
   src = pkgs.fetchFromGitHub {
     owner = "Keyitdev";
     repo = "sddm-astronaut-theme";
-    rev = "48ea0a792711ac0c58cc74f7a03e2e7ba3dc2ac0";
-    hash = "sha256-kXovz813BS+Mtbk6+nNNdnluwp/7V2e3KJLuIfiWRD0=";
+    rev = "2bb6702a5ddc9417aadbebd6d66aae14973e47ea";
+    hash = "sha256-F2I50TxGlKflHrRnmBxmiFOTzbCp/IBcHvzFf5GPXTY=";
   };
 
   dontWrapQtApps = true;
